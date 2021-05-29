@@ -1,0 +1,71 @@
+// .portfolio-set {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: -30px;
+//   margin-bottom: -30px;
+
+//   &__title {
+//     margin-bottom: 4px;
+
+//     color: $title-text-color;
+//     @include fonts($main-font, 18px, 2, 0.03em);
+//   }
+
+//   &__item {
+//     flex-basis: calc(100% / 3 - 30px);
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+//     background-color: $primary-background-color;
+//   }
+
+//   &__text {
+//     color: $primary-text-color;
+//     @include fonts($main-font, 16px, 1.87, 0.03em);
+//   }
+
+//   &__content {
+//     padding: 20px 24px;
+//     border: 1px solid $primary-border-color;
+//     border-top: 0;
+//   }
+
+//   &__thumb {
+//     position: relative;
+//   }
+
+//   &__overflow {
+//     overflow: hidden;
+//   }
+// }
+
+// .portfolio-set__link {
+//   display: block;
+
+//   &__link:hover,
+//   &__link:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(27, 27, 27, 0.16);
+//   }
+// }
+
+// .description {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   padding: 63px 24px;
+//   background-color: $portfolio-overlay-color;
+
+//   transform: translateY(100%);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &__text {
+//     @include fonts($main-font, 18px, 1.56, 0.03em);
+//     color: $primary-background-color;
+//   }
+
+//   .portfolio-set__link:hover & {
+//     transform: translate(0);
+//   }
+// }
