@@ -22,28 +22,62 @@
     <!------------------------Header----------------------->
     <header class="header">
         <div class="container header__container">
-            <a href="./index.html" lang="en" class="logo link">
-                <span class="logo--color">Web</span>Studio
-            </a>
-            <nav>
-                <ul class="site-nav list">
-                    <li class="item site-nav__item"><a href="#" class="link site-nav__link site-nav__link--active">Студия</a></li>
-                    <li class="item site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
-                    <li class="item site-nav__item"><a href="#" class="link site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="header__mobile-container">
+                <a href="./index.html" lang="en" class="logo link">
+                    <span class="logo--color">Web</span>Studio
+                </a>
 
-            <ul class="auth-nav list">
-                <li class="item auth-nav__item">
-                    <a class="link auth-nav__link" href="mailto:info@devstudio.com"><svg class="icon auth-nav__icon" width="21" height="16">
-                        <use href="./images/icons.svg#envelope"></use>
+                <button type="button" class="menu-button is-open" data-menu-button      
+                aria-label="Menu">
+                    <svg class="icon" width="24" height="16">
+                        <use class="icon-cross" href="./images/icons.svg#cross"></use>
+                        <use class="icon-menu" href="./images/icons.svg#menu"></use>
                     </svg>
-                    info@devstudio.com</a></li>
-                <li class="item auth-nav__item">
-                    <a class="link auth-nav__link" href="tel:+380961111111"><svg class="icon auth-nav__icon" width="16" height="20">
-                        <use href="./images/icons.svg#smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
-            </ul>
+                </button>
+            </div>
+            <div class="menu-container is-open" id="menu-container" data-menu>
+                <nav>
+                    <ul class="site-nav list">
+                        <li class="item site-nav__item"><a href="#" class="link site-nav__link site-nav__link--active">Студия</a></li>
+                        <li class="item site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
+                        <li class="item site-nav__item"><a href="#" class="link site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="auth-container">                   
+                    <ul class="auth-nav list">
+                        <li class="item auth-nav__item">
+                            <a class="link auth-nav__link" href="mailto:info@devstudio.com">
+                                <svg class="icon auth-nav__icon" width="21" height="16">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                        <li class="item auth-nav__item">
+                            <a class="link auth-nav__link" href="tel:+380961111111">
+                                <svg class="icon auth-nav__icon" width="16" height="20">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                    </ul>
+                    <ul class="list header-social">
+                        <li class="item header-social__item">
+                            <a class="link header-social__link" href="#">Instagram</a>
+                            <span class="sicial-divider">|</span>
+                        </li>
+                        <li class="item header-social__item">
+                            <a class="link header-social__link" href="#">Twitter</a>
+                            <span class="sicial-divider">|</span>
+                        </li>
+                        <li class="item header-social__item">
+                            <a class="link header-social__link" href="#">Facebook</a>
+                            <span class="sicial-divider">|</span>
+                        </li>
+                        <li class="item header-social__item">
+                            <a class="link header-social__link" href="#">Linkkedln</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -402,6 +436,7 @@
    </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
