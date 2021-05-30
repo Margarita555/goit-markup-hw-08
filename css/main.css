@@ -64,6 +64,19 @@ img {
   }
 }
 
+.hero__button {
+  font-family: "Roboto", sans serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   position: relative;
@@ -149,10 +162,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -169,9 +187,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-container {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .menu-container {
+    margin-left: 93px;
   }
 }
 
@@ -258,12 +287,6 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .auth-nav .auth-nav__link--mail {
-    font-size: 25px;
-  }
-}
-
 .auth-nav__icon {
   margin-right: 7px;
   fill: currentColor;
@@ -295,12 +318,46 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .auth-nav {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .auth-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .auth-nav__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .auth-nav__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav__link--mail {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .auth-nav__link--mail {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .auth-nav__link--mail {
+    margin-bottom: 0;
   }
 }
 
@@ -327,6 +384,60 @@ img {
 @media screen and (min-width: 767px) {
   .header-social {
     display: none;
+  }
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero__overlay {
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studioimages/heroimage.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studioimages/heroimage.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "Roboto", sans serif;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  padding: 10px 32px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__button:hover, .hero__button:focus {
+  background-color: #188ce8;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__overlay {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 1139px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1140px) {
+  .hero__overlay {
+    max-width: 1600px;
   }
 }
 /*# sourceMappingURL=main.css.map */
