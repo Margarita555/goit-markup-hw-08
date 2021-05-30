@@ -1,45 +1,69 @@
-// .features {
-//   padding-top: 94px;
-//   padding-bottom: 47px;
+.features {
+  &__title {
+    margin-bottom: 10px;
 
-//   &__title {
-//     margin-bottom: 10px;
+    color: $title-text-color;
+    @include fonts($main-font, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+  }
 
-//     color: $title-text-color;
-//     @include fonts($main-font, 14px, 1.14, 0.03em);
-//     text-transform: uppercase;
-//   }
+  &__text {
+    @include fonts($main-font, 14px, 1.7, 0.03em);
+  }
 
-//   &__text {
-//     @include fonts($main-font, 14px, 1.7, 0.03em);
-//   }
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 100%;
 
-//   &__list {
-//     display: flex;
-//   }
+    background-color: $secondary-background-color;
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
 
-//   &__item {
-//     flex-basis: calc((100% - 90px) / 4);
-//   }
+  &__list &__item:first-child &__thumb {
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+    }
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: 1140px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+
+  @media screen and (min-width: 1140px) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+}
 
 //   &__item + &__item {
 //     margin-left: 30px;
 //   }
-
-//   &__thumb {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-bottom: 30px;
-//     height: 120px;
-//     width: 100%;
-
-//     background-color: $secondary-background-color;
-//   }
-
-//   &__icon {
-//     width: 70px;
-//     height: 70px;
-//     display: block;
-//   }
-// }

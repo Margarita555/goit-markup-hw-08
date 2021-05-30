@@ -1,39 +1,45 @@
-// .direction {
-//   padding-top: 47px;
-//   padding-bottom: 94px;
+.direction {
+  @media screen and (max-width: 1139px) {
+    display: none;
+  }
 
-//   &__title {
-//     margin-bottom: 50px;
-//   }
+  @media screen and (min-width: 1140px) {
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
 
-//   &__titles {
-//     color: $primary-background-color;
-//     @include fonts($main-font, 14px, 1.14, 0.03em);
-//     text-align: center;
-//     text-transform: uppercase;
-//   }
+  &__title {
+    margin-bottom: 50px;
+  }
 
-//   &__label {
-//     position: absolute;
-//     padding: 27px;
-//     height: 70px;
-//     width: 100%;
-//     bottom: 0;
-//     left: 0;
+  &__titles {
+    color: $primary-background-color;
+    @include fonts($main-font, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-//     background-color: $label-background-color;
-//   }
+  &__label {
+    position: absolute;
+    padding: 27px;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 
-//   &__list {
-//     display: flex;
-//     flex-basis: calc((100%-90px) / 3);
-//     margin-right: -30px;
-//     margin-bottom: -30px;
-//   }
+    background-color: $label-background-color;
+  }
 
-//   &__item {
-//     position: relative;
-//     margin-right: 30px;
-//     margin-bottom: 30px;
-//   }
-// }
+  &__list {
+    display: flex;
+    flex-basis: calc((100%-90px) / 3);
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}

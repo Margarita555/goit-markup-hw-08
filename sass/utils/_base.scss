@@ -30,14 +30,20 @@ img {
 }
 
 .title {
-  margin-bottom: 50px;
-
   color: $title-text-color;
   font-family: $main-font;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03;
   text-align: center;
+
+  @media screen and (max-width: 1139px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    margin-bottom: 50px;
+  }
 }
 
 .container {
@@ -58,6 +64,13 @@ img {
   }
 
   // max-width: 1200px;
+}
+
+.section {
+  @media screen and (max-width: 1139px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 // .portfolio {
