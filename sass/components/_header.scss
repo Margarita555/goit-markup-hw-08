@@ -128,10 +128,11 @@
   }
 }
 
-.auth-container {
-  display: flex;
-  flex-direction: column;
-}
+// .auth-container {
+//   position: absolute;
+//   bottom: 48px;
+//   left: 0;
+// }
 
 .auth-nav {
   &__link {
