@@ -41,8 +41,12 @@
     @media screen and (min-width: 768px) {
       display: flex;
     }
+
     @media screen and (min-width: 768px) and (max-width: 1139px) {
       flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
       margin: -15px;
     }
   }
