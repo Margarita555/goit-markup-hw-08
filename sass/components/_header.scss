@@ -88,7 +88,7 @@
     margin-left: 88px;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -152,7 +152,7 @@
     }
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 93px;
   }
@@ -197,7 +197,7 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
 
@@ -219,8 +219,14 @@
   @media screen and (min-width: 767px) {
     margin-bottom: 10px;
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+  }
+}
+
+.auth-nav__link--tel {
+  @media screen and (max-width: 767px) {
+    color: $accent-color;
   }
 }
 

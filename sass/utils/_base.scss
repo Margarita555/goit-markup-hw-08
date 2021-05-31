@@ -35,13 +35,13 @@ img {
   letter-spacing: 0.03;
   text-align: center;
 
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.17;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
@@ -69,7 +69,7 @@ img {
 }
 
 .section {
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }

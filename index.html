@@ -52,7 +52,7 @@
                             </svg>
                         info@devstudio.com</a></li>
                     <li class="item auth-nav__item auth-nav__item--tel">
-                        <a class="link auth-nav__link auth-nav__link--" href="tel:+380961111111">
+                        <a class="link auth-nav__link auth-nav__link--tel" href="tel:+380961111111">
                             <svg class="icon auth-nav__icon" width="16" height="20">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
@@ -326,7 +326,7 @@
         </section>
     </main>
     <!--Footer-->
-    <footer class="footer section">
+    <footer class="footer">
         <div class="container footer__container">
             <div>
                 <a href="./index.html" lang="en" class="logo logo--footer link"><span class="logo--color">Web</span>Studio</a>
@@ -374,12 +374,14 @@
             </div>
             <div class="footer__signin">
                 <h3 class="footer__title">Подпишитесь на рассылку</h3>
-                <input class="footer__mail-input" type="email" name="mail" placeholder="E-mail">
-                <button class="footer__button" type="submit">Подписаться
-                    <svg class="icon button__icon" width="24" height="24">
-                        <use href="./images/icons.svg#plane"></use>
-                    </svg>
-                </button>
+                <div class="signin-box">
+                    <input class="footer__mail-input" type="email" name="mail" placeholder="E-mail">
+                    <button class="footer__button" type="submit">Подписаться
+                        <svg class="icon button__icon" width="24" height="24">
+                            <use href="./images/icons.svg#plane"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
@@ -419,8 +421,8 @@
                     <textarea class="form__input form__comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
                 </div>  
 
-                <label class="checkbox" for="agree">
-                    <input class="checkbox__input" type="checkbox" name="agree" value="agree" id="agree">
+                <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="agree" value="agree">
                     <span class="checkbox__icon"></span>
                     <svg class="icon checkbox__icon--tick" width="16" height="15">
                         <use href="./images/icons.svg#tick"></use>
