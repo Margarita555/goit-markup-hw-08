@@ -1,6 +1,15 @@
 .client {
+  &__list {
+    display: flex;
+    margin: -15px;
+    @media screen and (max-width: 1139px) {
+      flex-wrap: wrap;
+    }
+  }
+
   &__link {
     display: flex;
+    margin: 15px;
     align-items: center;
     justify-content: center;
     height: 92px;
@@ -13,7 +22,10 @@
     @media screen and (max-width: 767px) {
       width: 210px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1140px) {
       width: 170px;
     }
   }
@@ -30,13 +42,6 @@
   &__link:hover &__icon,
   &__link:focus &__icon {
     fill: $accent-color;
-  }
-
-  &__list {
-    display: flex;
-    @media screen and (max-width: 767px) {
-      flex-wrap: wrap;
-    }
   }
 }
 
