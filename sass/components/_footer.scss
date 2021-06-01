@@ -52,8 +52,34 @@
   @include fonts($main-font, 14px, 1.14, 0.03em);
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 60px;
+    text-align: center;
+  }
+}
+
+.footer__case {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.footer__join {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+
+.signin-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -74,6 +100,9 @@
   color: $input-text-color;
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 12px;
   }
 
   &:focus {
@@ -102,10 +131,6 @@
 //     display: flex;
 //     align-items: baseline;
 //   }
-// }
-
-// .footer__join {
-//   margin-left: 70px;
 // }
 
 // .footer__signin {
