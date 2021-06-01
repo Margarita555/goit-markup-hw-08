@@ -7,6 +7,10 @@
   &__container {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
@@ -76,10 +80,19 @@
   }
 }
 
+.footer__signin {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
 .signin-box {
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 768px) {
+  //   justify-content: center;
+  // }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
   }
 }
 
@@ -92,16 +105,23 @@
   fill: $primary-background-color;
 }
 .footer__mail-input {
-  padding: 15px 16px;
+  padding-left: 16px;
   min-width: 358px;
+  height: 50px;
   background-color: $footer-background-color;
   border-color: $input-text-color;
   border-radius: 4px;
   color: $input-text-color;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 12px;
   }
 
@@ -119,22 +139,16 @@
   @extend %button;
   display: inline-flex;
   align-items: center;
+  height: 50px;
   padding: 10px 28px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button__icon {
   margin-left: 10px;
 }
-
-//   &__container {
-//     display: flex;
-//     align-items: baseline;
-//   }
-// }
-
-// .footer__signin {
-//   margin-left: 93px;
-// }
-
-// signin-box  flex margin-right 12
