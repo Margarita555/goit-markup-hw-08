@@ -164,6 +164,10 @@ img {
   display: block;
 }
 
+.menu-button .icon-menu {
+  display: block;
+}
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
@@ -948,7 +952,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .signin-box {
+  .footer__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1053,6 +1057,109 @@ img {
 
 .button__icon {
   margin-left: 10px;
+}
+
+.filters__button {
+  padding: 6px 22px;
+  cursor: pointer;
+  color: #212121;
+  background-color: #f5f4fa;
+  font-family: "Roboto", sans serif;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 0;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters__button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters__button:hover, .filters__button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-set__title {
+  margin-bottom: 4px;
+  color: #212121;
+  font-family: "Roboto", sans serif;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-set__item {
+  background-color: #ffffff;
+}
+
+.portfolio-set__text {
+  color: #757575;
+  font-family: "Roboto", sans serif;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-set__content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
+.portfolio-set__thumb {
+  position: relative;
+}
+
+.portfolio-set__overflow {
+  overflow: hidden;
+}
+
+.portfolio-set__link {
+  display: block;
+}
+
+.portfolio-set__link__link:hover, .portfolio-set__link__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(27, 27, 27, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(27, 27, 27, 0.16);
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  overflow: auto;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.description__text {
+  font-family: "Roboto", sans serif;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.portfolio-set__link:hover .description {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .description::-webkit-scrollbar {

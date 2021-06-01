@@ -49,6 +49,10 @@
     display: block;
   }
 
+  & .icon-menu {
+    display: block;
+  }
+
   &.is-open .icon-menu {
     display: none;
   }
