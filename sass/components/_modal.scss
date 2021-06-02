@@ -90,11 +90,9 @@
   &__title {
     margin-bottom: 12px;
 
-    font-family: $main-font;
-    font-size: 20px;
-    line-height: 1.15;
+    @include fonts($main-font, 20px, 1.15, 0.03em);
+    font-weight: 700;
     text-align: center;
-    letter-spacing: 0.03em;
     color: $title-text-color;
   }
 
