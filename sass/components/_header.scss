@@ -277,13 +277,20 @@
   }
 }
 
-.menu-btn.active .icon-cross {
-  display: block;
+.menu-button-ex {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
-.menu-btn .icon-cross {
+
+.menu-button-ex .icon-cross-ex {
   display: none;
 }
 
-.menu-btn.active .icon-menu {
+.menu-button-ex.is-open .icon-cross-ex {
+  display: block;
+}
+.menu-button-ex.is-open .icon-menu-ex {
   display: none;
 }
