@@ -53,20 +53,20 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 
-  @media screen and (max-width: 479px) {
-    max-width: 480px;
-  }
+  // @media screen and (max-width: 479px) {
+  //   max-width: 300px;
+  // }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    min-width: 480px;
+    max-width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 738px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 
   // max-width: 1200px;

@@ -106,23 +106,33 @@
 }
 .footer__mail-input {
   padding-left: 16px;
-  min-width: 358px;
+  // min-width: 358px;
   height: 50px;
   background-color: $footer-background-color;
   border-color: $input-text-color;
   border-radius: 4px;
   color: $input-text-color;
+
+  @media screen and (max-width: 479px) {
+    min-width: 300px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+  }
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 12px;
+    min-width: 358px;
   }
 
   &:focus {
