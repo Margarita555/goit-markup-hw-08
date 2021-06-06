@@ -74,14 +74,12 @@
   background-color: $primary-background-color;
 
   &.is-open {
-    // display: block;
     display: flex;
   }
 
   &.is-open {
     @media screen and (max-width: 767px) {
       flex-direction: column;
-      // margin: 0 auto;
     }
   }
 
@@ -167,10 +165,10 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: 93px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   margin-left: 93px;
+  // }
 }
 
 .auth-nav {
@@ -209,6 +207,7 @@
 
   @media screen and (min-width: 768px) {
     margin-left: auto;
+    margin-right: 0;
   }
 
   @media screen and (min-width: 1200px) {

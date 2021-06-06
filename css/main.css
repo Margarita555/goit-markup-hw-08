@@ -67,7 +67,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
   }
 }
 
@@ -306,15 +306,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 93px;
-  }
-}
-
 .auth-nav__link {
   font-weight: 500;
   color: #757575;
@@ -366,6 +357,7 @@ img {
 @media screen and (min-width: 768px) {
   .auth-nav {
     margin-left: auto;
+    margin-right: 0;
   }
 }
 
@@ -1133,6 +1125,10 @@ img {
   margin-left: 10px;
 }
 
+.filters {
+  font-size: 0;
+}
+
 @media screen and (min-width: 768px) {
   .filters {
     display: -webkit-box;
@@ -1195,6 +1191,10 @@ img {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-set img {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
