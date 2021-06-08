@@ -87,10 +87,6 @@
 }
 
 .footer__form {
-  // @media screen and (min-width: 768px) {
-  //   justify-content: center;
-  // }
-
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -106,7 +102,6 @@
 }
 .footer__mail-input {
   padding-left: 16px;
-  // min-width: 358px;
   height: 50px;
   background-color: $footer-background-color;
   border-color: $input-text-color;
