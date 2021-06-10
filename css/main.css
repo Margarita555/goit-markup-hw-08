@@ -1,6 +1,7 @@
 body {
   color: #757575;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 h1,
@@ -1030,15 +1031,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .footer__mail-input {
-    min-width: 300px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .footer__mail-input {
-    width: 450px;
+    display: block;
+    width: 95%;
   }
 }
 

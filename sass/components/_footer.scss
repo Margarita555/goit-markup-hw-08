@@ -108,12 +108,9 @@
   border-radius: 4px;
   color: $input-text-color;
 
-  @media screen and (max-width: 479px) {
-    min-width: 300px;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 95%;
   }
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
