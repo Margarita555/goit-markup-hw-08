@@ -849,9 +849,11 @@ img {
   margin: 15px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 351px) {
   .client__item {
-    min-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 270px;
   }
 }
 
@@ -1034,7 +1036,9 @@ img {
 @media screen and (max-width: 767px) {
   .footer__mail-input {
     display: block;
-    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
